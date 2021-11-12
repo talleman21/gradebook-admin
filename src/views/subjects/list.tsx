@@ -7,6 +7,7 @@ import {
   SingleFieldList,
   ChipField,
   EditButton,
+  DeleteButton
 } from "react-admin";
 
 export const SubjectList = (props: any) => (
@@ -19,6 +20,7 @@ export const SubjectList = (props: any) => (
         </SingleFieldList>
       </ReferenceArrayField>
       <EditButton />
+      <DeleteButton/>
     </Datagrid>
   </List>
 );

@@ -6,6 +6,7 @@ import {
   ReferenceField,
   NumberField,
   EditButton,
+  DeleteButton
 } from "react-admin";
 
 export const GradeList = (props: any) => (
@@ -19,6 +20,7 @@ export const GradeList = (props: any) => (
       </ReferenceField>
       <NumberField source="grade" />
       <EditButton />
+      <DeleteButton/>
     </Datagrid>
   </List>
 );
