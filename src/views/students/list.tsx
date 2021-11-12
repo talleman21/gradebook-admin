@@ -8,6 +8,7 @@ import {
   SingleFieldList,
   ChipField,
   EditButton,
+  DeleteButton
 } from "react-admin";
 
 export const StudentList = (props: any) => (
@@ -20,6 +21,7 @@ export const StudentList = (props: any) => (
         </SingleFieldList>
       </ReferenceArrayField>
       <EditButton />
+      <DeleteButton/>
     </Datagrid>
   </List>
 );

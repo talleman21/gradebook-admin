@@ -6,7 +6,8 @@ import {
   ReferenceField,
   ReferenceArrayField,
   SingleFieldList,
-  EditButton
+  EditButton,
+  DeleteButton
 } from "react-admin";
 
 export const CurriculumList = (props: any) => (
@@ -30,6 +31,7 @@ export const CurriculumList = (props: any) => (
         </SingleFieldList>
       </ReferenceArrayField>
       <EditButton />
+      <DeleteButton/>
     </Datagrid>
   </List>
 );

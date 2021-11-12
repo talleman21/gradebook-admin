@@ -5,7 +5,8 @@ import {
   TextField,
   ReferenceField,
   DateField,
-  EditButton
+  EditButton,
+  DeleteButton
 } from "react-admin";
 
 export const AssignmentList = (props: any) => (
@@ -18,6 +19,7 @@ export const AssignmentList = (props: any) => (
         <TextField source="name" />
       </ReferenceField>
       <EditButton />
+      <DeleteButton/>
     </Datagrid>
   </List>
 );
