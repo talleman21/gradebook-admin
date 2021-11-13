@@ -21,12 +21,12 @@ export const AssignmentEdit = (props: any) => (
   <Edit {...props} transform={stripId}>
     <SimpleForm redirect="/assignments">
       <TextInput source="id" disabled />
+      <ReferenceField source="curriculumId" reference="curriculums">
+        <TextField source="name" />
+      </ReferenceField>
       <TextInput source="name" />
       <TextInput source="description" />
       <DateInput source="dueDate" />
-      <ReferenceInput source="curriculumId" reference="curriculums" validate={required()}>
-        <SelectInput optionText="name" />
-      </ReferenceInput>
       <ReferenceManyField
         reference="grades"
         target="assignmentId"
@@ -49,12 +49,12 @@ export const AssignmentEdit = (props: any) => (
 export const AssignmentCreate = (props: any) => (
   <Create {...props}>
     <SimpleForm redirect='/assignments'>
-      <TextInput source="name" />
-      <TextInput source="description" />
-      <DateInput source="dueDate" />
       <ReferenceInput source="curriculumId" reference="curriculums" validate={required()}>
         <SelectInput optionText="name" />
       </ReferenceInput>
+      <TextInput source="name" />
+      <TextInput source="description" />
+      <DateInput source="dueDate" />
     </SimpleForm>
   </Create>
 );

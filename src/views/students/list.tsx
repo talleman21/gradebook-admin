@@ -3,7 +3,6 @@ import {
   List,
   Datagrid,
   TextField,
-  ArrayField,
   ReferenceArrayField,
   SingleFieldList,
   ChipField,
@@ -15,7 +14,7 @@ export const StudentList = (props: any) => (
   <List {...props}>
     <Datagrid>
       <TextField source="name" />
-      <ReferenceArrayField label='curriculums' reference="curriculums" source="curriculumIds">
+      <ReferenceArrayField label='Curriculums' reference="curriculums" source="curriculumIds">
         <SingleFieldList>
           <ChipField source="name" />
         </SingleFieldList>

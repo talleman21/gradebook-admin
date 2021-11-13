@@ -17,7 +17,7 @@ export const InstructorEdit = (props: any) => (
     <SimpleForm redirect="/instructors">
       <TextInput source="id" disabled />
       <TextInput source="name" />
-      <ReferenceArrayField source="curriculumIds" reference='curriculums'>
+      <ReferenceArrayField label='Curriculums' source="curriculumIds" reference='curriculums'>
         <SingleFieldList>
           <TextField source="name" />
         </SingleFieldList>        
