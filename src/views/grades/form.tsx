@@ -31,13 +31,13 @@ export const GradeEdit = (props: any) => (
 export const GradeCreate = (props: any) => (
   <Create {...props}>
     <SimpleForm redirect='/grades'>
-      <TextInput source="grade" />
       <ReferenceInput source="assignmentId" reference="assignments">
         <SelectInput optionText="name" />
       </ReferenceInput>
       <ReferenceInput source="studentId" reference="students">
         <SelectInput optionText="name" />
       </ReferenceInput>
+      <TextInput source="grade" />
     </SimpleForm>
   </Create>
 );
