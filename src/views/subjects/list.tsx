@@ -12,7 +12,7 @@ import {
 
 export const SubjectList = (props: any) => (
   <List {...props}>
-    <Datagrid {...props}>
+    <Datagrid>
       <TextField source="name" />
       <ReferenceArrayField label='Curriculums' source="curriculumIds" reference="curriculums">
         <SingleFieldList>

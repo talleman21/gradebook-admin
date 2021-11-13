@@ -14,7 +14,6 @@ import {
 } from "react-admin";
 import { stripId } from "../../helpers";
 
-interface Props {}
 
 export const CurriculumEdit = (props: any) => (
   <Edit {...props} transform={stripId}>

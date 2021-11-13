@@ -9,7 +9,6 @@ import {
   SingleFieldList
 } from "react-admin";
 
-interface Props {}
 
 export const SubjectCreate = (props: any) => {
   return (

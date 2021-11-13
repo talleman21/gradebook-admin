@@ -10,7 +10,6 @@ import {
 } from "react-admin";
 import { stripId } from "../../helpers";
 
-interface Props {}
 
 export const InstructorEdit = (props: any) => (
   <Edit {...props} transform={stripId}>
